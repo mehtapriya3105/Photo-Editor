@@ -1,0 +1,53 @@
+load res/koala.jpg koala-jpg
+brighten 10 koala-jpg koala-jpg-brighter
+brighten -10 koala-jpg koala-jpg-darken
+save res/koala-bright.jpg koala-jpg-brighter
+save res/koala-dark.jpg koala-jpg-darken
+blur koala-jpg koala-jpg-blur
+save res/koala-jpg-blur.jpg koala-jpg-blur
+sharpen koala-jpg koala-jpg-sharpen
+save res/koala-sharp.jpg koala-jpg-sharpen
+red-component koala-jpg koala-jpg-red
+save res/koala-jpg-red.jpg koala-jpg-red
+blue-component koala-jpg koala-jpg-blue
+save res/koala-jpg-blue.jpg koala-jpg-blue
+green-component koala-jpg koala-jpg-green
+save res/koala-jpg-green.jpg koala-jpg-green
+value-component koala-jpg koala-jpg-value
+save res/koala-jpg-value.jpg koala-jpg-value
+luma-component koala-jpg koala-jpg-luma
+intensity-component koala-jpg koala-jpg-intensity
+save res/koala-jpg-intensity.jpg koala-jpg-intensity
+rgb-split koala-jpg koala-redsplit koala-greensplit koala-bluesplit
+save res/koala-jpg-redsplit.jpg koala-redsplit
+save res/koala-jpg-greensplit.jpg koala-greensplit
+save res/koala-jpg-bluesplit.jpg koala-bluesplit
+sepia koala-jpg koala-jpg-sepia
+save res/koala-jpg-sepia.jpg koala-jpg-sepia
+horizontal-flip koala-jpg koala-jpg-hflip
+save res/koala-jpg-hflip.jpg koala-jpg-hflip
+vertical-flip koala-jpg koala-jpg-vflip
+save res/koala-jpg-vflip.jpg koala-jpg-vflip
+vertical-flip koala-jpg-hflip koala-jpg-hvflipnew
+save res/koala-jpg-hvflipnew.jpg koala-jpg-hvflipnew
+rgb-combine koalargbcombine koala-jpg-red koala-jpg-green koala-jpg-blue
+save res/koala-rgbcombine.jpg koalargbcombine
+load res/galaxy.png gal
+histogram gal gal-histo
+save res/gal-histogram.png gal-histo
+color-correct gal gal-correct
+save res/gal-correct.png gal-correct
+level-adjust 20 100 255 gal gal-adjusted
+save res/gal-adjusted.png gal-adjusted
+level-adjust 100 200 255 gal-correct gal-c-a
+save res/gal-correct-adjusted.png gal-c-a
+load res/manhattan-small.png m
+compress 25 m m-compress
+save res/manhattan-compress-2.png m-compress
+compress 50 m m-c
+save res-manhattan-compress-1.png m-c
+load res/koala.jpg k
+blur k kb split 50
+save res/blur-split-koala.jpg kb
+blur k kbb split 25
+save res/blur-split-koala-2.jpg kbb

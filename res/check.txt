@@ -1,0 +1,118 @@
+load res/manhattan-small.png mh
+
+load res/triangle_mask.png mh-mask
+
+red-component mh mhr
+save F/mhr.png mhr
+
+red-component mh mhr-split-40 split 40
+save F/mhr-split-40.png mhr-split-40
+
+red-component mh mh-mask mhr-mask
+save F/mhr-mask.png mhr-mask
+
+blue-component mh mhb
+save F/mhb.png mhb
+
+blue-component mh mhb-split split 40
+save F/mhb-split.png mhb-split
+
+blue-component mh mh-mask mhb-mask
+save F/mhb-mask.png mhb-mask
+
+green-component mh mhg
+save F/mhg.png mhg
+
+green-component mh mhg-split split 40
+save F/mhg-split.png mhg-split
+
+green-component mh mh-mask mhg-mask
+save F/mhg-mask.png mhg-mask
+
+luma-component mh mh-luma
+save F/mh-luma.png mhg
+
+luma-component mh mh-luma-40 split 40
+save F/mh-luma-40.png mh-luma-40
+
+luma-component mh mh-mask mh-luma-mask
+save F/mh-luma-mask.png mh-luma-mask
+
+value-component mh mh-value
+save F/mh-value.png mh-value
+
+value-component mh mh-mask mh-mask-luma
+save F/mh-mask-luma.png mh-mask-luma
+
+value-component mh mh-value-40 split 40
+save F/mh-value-40.png mh-value-40
+
+intensity-component mh mh-intensity
+save F/mh-intensity.png mh-intensity
+
+intensity-component mh mh-mask mh-intensity-mask
+save F/mh-intensity-mask.png mh-intensity-mask
+
+intensity-component mh mh-intensity-40 split 40
+save F/mh-intensity-40.png mh-intensity-40
+
+blur mh mh-blur
+save F/mh-blur.png mh-blur
+
+blur mh mh-mask mh-blur-mask
+save F/mh-blur-mask.png mh-blur-mask
+
+blur mh mh-blur-split split 50
+save F/mh-blur-split-50.png mh-blur-split
+
+sharpen mh mh-sharpen
+save F/mh-sharpen.png mh-sharpen
+
+sharpen mh mh-mask mh-sharpen-mask
+save F/mh-sharpen-mask.png mh-sharpen-mask
+
+sharpen mh mh-sharpen-split split 50
+save F/mh-sharpen-split.png mh-sharpen-split
+
+sepia mh mh-sepia
+save F/mh-sepia.png mh-sepia
+
+sepia mh mh-mask mh-sepia-mask
+save F/mh-sepia-mask.png mh-sepia-mask
+
+sepia mh mh-sepia-split split 40
+save F/mh-sepia-split.png mh-sepia-split
+
+histogram mh mh-histo
+save F/mh-histogram.png mh-histo
+
+color-correct mh mh-correct
+save F/mh-correct.png mh-correct
+
+color-correct mh mh-correct-split split 40
+save F/mh-correct-split.png mh-correct-split
+
+level-adjust 100 200 255 mh mh-c-a
+save F/mh-level-adjusted.png mh-c-a
+
+level-adjust 100 200 255 mh mh-c-a-split split 40
+save F/mh-level-adjusted-split.png mh-c-a-split
+
+horizontal-flip mh mh-fliph
+save F/mh-fliph.png mh-fliph
+
+vertical-flip mh mh-flipv
+save F/mh-flipv.png mh-flipv
+
+rgb-combine mh-combine mhr mhg mhb
+save F/mh-combine.png mh-combine
+
+rgb-split mh mh-redsplit mh-greensplit mh-bluesplit
+save F/mh-redsplit.png mh-redsplit
+save F/mh-greensplit.png mh-greensplit
+save F/mh-bluesplit.png mh-bluesplit
+
+compress 50 mh mh-compress
+save F/mh-compress.png mh-compress
+
+quit

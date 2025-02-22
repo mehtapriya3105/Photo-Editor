@@ -1,0 +1,4 @@
+load res/koala.jpg koala-jpg
+brighten 10 koala-jpg koala-jpg-brighter
+blur koala-jpg koala-jpg-blur
+blue-component koala-jpg koala-jpg-blue
