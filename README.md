@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Image Processing Application
 
 ## Project Description:
@@ -1071,3 +1072,6 @@ Image used for script testing and application testing:
 - https://upload.wikimedia.org/wikipedia/commons/4/41/Lower_Manhattan_from_Jersey_City_November_2014_panorama_2.jpg (
   for manhattan-small image)
 
+=======
+# Photo-Editor
+>>>>>>> a6f0c533075c81ad2f269ad9ccb7e2353fa23cca
